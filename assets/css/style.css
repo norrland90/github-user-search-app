@@ -1,0 +1,71 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+/* CUSTOM PROPERTIES */
+
+:root {
+  /* KAN BEHÖVA KOLLA IGENOM ALLA FÄRGER SÅ DET STÄMMER */
+  --clr-accent: rgb(0, 121, 255);
+  --clr-accent-transp: rgba(0, 121, 255, 0.5); /* hover */
+  --clr-warning: rgb(247, 70, 70);
+
+  /* Colors light mode */
+  --clr-lm-dark-200: rgb(105, 124, 154);
+  --clr-lm-dark-300: rgb(75, 100, 155); /* also for toggle */
+  --clr-lm-dark-300-transp: rgba(75, 100, 155, 0.5); /* for "not available" */
+  --clr-lm-dark-400: rgb(43, 52, 66); /* Darkest. Also for toggle hover */
+  --clr-lm-light-300: rgb(246, 248, 255);
+  --clr-lm-light-400: rgb(254, 254, 254); /* Lightest */
+
+  /* Colors dark mode */
+  --clr-dm-dark-300: rgb(30, 42, 71);
+  --clr-dm-dark-400: rgb(20, 29, 47); /* Darkest */
+  --clr-dm-light-400: rgb(255, 255, 255); /* Lightest. Also for toggle */
+  --clr-dm-light-400-transp: rgba(255, 255, 255, 0.5); /* for "not available" */
+  --clr-dm-toggle-hover: rgb(144, 164, 212); /* Toggle hover dark mode */
+
+  /* Fonts */
+  --ff-primary: 'Space Mono', monospace;
+
+  --fs-h1: 1.625rem;
+  --fs-h2: 1rem;
+  --fs-h3: 0.6875rem;
+  --fs-body-l: 1rem;
+  --fs-body: 0.8125rem;
+  --fs-input: 0.6875rem;
+  --fs-search: 0.875rem;
+}
+
+/* Font sizes tablet and desktop, maybe change the breakpoint */
+@media screen and (min-width: 700px) {
+  :root {
+    --fs-h2: 1.625rem;
+    --fs-h3: 0.8125rem;
+    --fs-body-l: 1.375rem;
+    --fs-body: 0.9375rem;
+    --fs-input: 1.125rem;
+    --fs-search: 1rem;
+  }
+}
+
+/* Some testing */
+.header__toggle {
+  background: none;
+  border: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  text-transform: uppercase;
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.header__toggle:hover {
+  color: black;
+}
+
+.header__toggle:hover svg path {
+  fill: red;
+}
