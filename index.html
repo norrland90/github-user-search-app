@@ -39,9 +39,11 @@
       <form class="form">
         <!-- Decorative svg -->
         <svg
-          class="header__search-icon"
-          height="24"
-          width="25"
+          class="form__search-icon"
+          viewBox="0 0 25 25"
+          height="20"
+          width="20"
+          preserveAspectRatio="slice"
           xmlns="http://www.w3.org/2000/svg"
           aria-hidden="true"
           role="img"
@@ -63,6 +65,7 @@
       </form>
       <article class="results">
         <img
+          class="results__profile-pic"
           src="https://avatars.githubusercontent.com/u/79220667?v=4"
           alt=""
         />
@@ -96,7 +99,7 @@
               <svg
                 class="results__icon"
                 height="20"
-                width="14"
+                width="20"
                 xmlns="http://www.w3.org/2000/svg"
                 aria-labelledby="location"
                 role="img"
@@ -107,7 +110,7 @@
                   fill="#4b6a9b"
                 />
               </svg>
-              <p class="results__contact-info">San Francisco</p>
+              <a href="" class="results__contact-info">San Francisco</a>
             </div>
             <div class="results__contact">
               <!-- Icon with semantic meaning -->
@@ -129,13 +132,13 @@
                   />
                 </g>
               </svg>
-              <p class="results__contact-info">https://github.blog</p>
+              <a href="" class="results__contact-info">https://github.blog</a>
             </div>
             <div class="results__contact">
               <!-- Icon with semantic meaning -->
               <svg
                 class="results_icon"
-                height="18"
+                height="20"
                 width="20"
                 xmlns="http://www.w3.org/2000/svg"
                 aria-labelledby="twitter"
@@ -147,7 +150,9 @@
                   fill="#4b6a9b"
                 />
               </svg>
-              <p class="results__contact-info">Not Available</p>
+              <a href="" class="results__contact-info results__contact-info--na"
+                >Not Available</a
+              >
             </div>
             <div class="results__contact">
               <!-- Icon with semantic meaning -->
@@ -166,7 +171,7 @@
                   />
                 </g>
               </svg>
-              <p class="results__contact-info">@github</p>
+              <a href="" class="results__contact-info">@github</a>
             </div>
           </div>
         </div>
