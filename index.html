@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <script src="assets/js/main.js" defer></script>
+    <script type="module" src="assets/js/main.js" defer></script>
     <title>GitHub User Search App</title>
   </head>
   <body>
@@ -13,7 +13,7 @@
         <h1 class="header__heading">devfinder</h1>
         <button
           type="button"
-          class="header__toggle"
+          class="header__toggle-btn header__toggle-btn--dark"
           aria-label="change to dark mode"
         >
           <!-- aria-label for a more accessible name -->
@@ -35,6 +35,30 @@
             />
           </svg>
         </button>
+        <button
+          type="button"
+          class="header__toggle-btn header__toggle-btn--light"
+          aria-label="change to dark mode"
+        >
+          <!-- aria-label for a more accessible name -->
+          light
+          <!-- decorative svg - ignored by screen readers -->
+          <svg
+            class="header__mode-icon"
+            width="20"
+            height="20"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            role="img"
+            focusable="false"
+          >
+            <g fill="#FFF" fill-rule="nonzero">
+              <path
+                d="M13.545 6.455c-.9-.9-2.17-1.481-3.545-1.481a4.934 4.934 0 00-3.545 1.481c-.9.9-1.481 2.17-1.481 3.545 0 1.376.582 2.646 1.481 3.545.9.9 2.17 1.481 3.545 1.481a4.934 4.934 0 003.545-1.481c.9-.9 1.481-2.17 1.481-3.545a4.934 4.934 0 00-1.481-3.545zM10 3.413a.7.7 0 00.688-.688V.688A.7.7 0 0010 0a.7.7 0 00-.688.688v2.037a.7.7 0 00.688.688zM15.635 5.344l1.455-1.455a.67.67 0 000-.952.67.67 0 00-.952 0l-1.455 1.455a.67.67 0 000 .952c.238.264.66.264.952 0zM19.312 9.312h-2.037a.7.7 0 00-.688.688.7.7 0 00.688.688h2.037A.7.7 0 0020 10a.7.7 0 00-.688-.688zM15.608 14.656a.67.67 0 00-.952 0 .67.67 0 000 .952l1.455 1.455a.67.67 0 00.952 0 .67.67 0 000-.952l-1.455-1.455zM10 16.587a.7.7 0 00-.688.688v2.037A.7.7 0 0010 20a.7.7 0 00.688-.688v-2.037a.7.7 0 00-.688-.688zM4.365 14.656L2.91 16.111a.67.67 0 000 .952.67.67 0 00.952 0l1.455-1.455a.67.67 0 000-.952c-.238-.264-.66-.264-.952 0zM3.413 10a.7.7 0 00-.688-.688H.688A.7.7 0 000 10a.7.7 0 00.688.688h2.037A.7.7 0 003.413 10zM4.365 5.344a.67.67 0 00.952 0 .67.67 0 000-.952L3.862 2.937a.67.67 0 00-.952 0 .67.67 0 000 .952l1.455 1.455z"
+              />
+            </g>
+          </svg>
+        </button>
       </header>
       <form class="form">
         <!-- Decorative svg -->
@@ -43,7 +67,6 @@
           viewBox="0 0 25 25"
           height="20"
           width="20"
-          preserveAspectRatio="slice"
           xmlns="http://www.w3.org/2000/svg"
           aria-hidden="true"
           role="img"
@@ -119,10 +142,10 @@
                 height="20"
                 width="20"
                 xmlns="http://www.w3.org/2000/svg"
-                aria-labelledby="website"
+                aria-labelledby="blog"
                 role="img"
               >
-                <title id="website">Website</title>
+                <title id="blog">Website</title>
                 <g>
                   <path
                     d="M7.404 5.012c-2.355 2.437-1.841 6.482.857 8.273.089.06.207.048.283-.027.568-.555 1.049-1.093 1.47-1.776a.213.213 0 00-.084-.3A2.743 2.743 0 018.878 10.1a2.64 2.64 0 01-.223-1.803c.168-.815 1.043-1.573 1.711-2.274l-.004-.002 2.504-2.555a2.568 2.568 0 013.648-.019 2.6 2.6 0 01.037 3.666l-1.517 1.56a.266.266 0 00-.06.273c.35 1.012.435 2.44.201 3.519-.006.03.031.05.053.028l3.228-3.295c2.062-2.105 2.044-5.531-.04-7.615a5.416 5.416 0 00-7.691.04L7.417 4.998l-.013.014z"
