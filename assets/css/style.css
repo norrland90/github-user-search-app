@@ -12,7 +12,6 @@
 
 /* CUSTOM PROPERTIES */
 :root {
-  /* KAN BEHÖVA KOLLA IGENOM ALLA FÄRGER SÅ DET STÄMMER */
   --clr-accent: rgb(0, 121, 255);
   --clr-accent-transp: rgba(0, 121, 255, 0.8); /* hover */
   --clr-warning: rgb(247, 70, 70);
@@ -47,7 +46,7 @@
   --box-shadow-primary: 0px 5px 30px -10px rgba(75, 100, 155, 0.2);
 }
 
-/* Font sizes tablet (768px) and desktop (1440px), maybe change the breakpoint */
+/* Font sizes tablet (768px) and desktop (1440px) */
 @media screen and (min-width: 768px) {
   :root {
     --fs-h2: 1.625rem;
@@ -346,7 +345,6 @@ a.results__contact-info:hover {
   text-decoration: underline;
 }
 
-/* This needs to not be a link */
 .results__contact-info--na {
   color: var(--clr-lm-dark-300-transp);
 }
