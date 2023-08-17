@@ -171,6 +171,7 @@ img {
 .form {
   display: grid;
   grid-template-columns: auto 1fr auto;
+  grid-auto-flow: column;
   align-items: center;
 
   background-color: var(--clr-lm-light-400);
@@ -186,6 +187,7 @@ img {
   padding: 1.25rem 0.5rem;
   font-family: inherit;
   font-size: var(--fs-input-search);
+  min-width: 0; /* override input default min-width */
 }
 
 .form__input:focus {
@@ -212,6 +214,18 @@ img {
 
 .form__submit-btn:hover {
   background-color: var(--clr-accent-transp);
+}
+
+.form__warning {
+  color: var(--clr-warning);
+  font-weight: bold;
+  padding-right: 1rem;
+}
+
+.form__error-message {
+  color: var(--clr-warning);
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 
 /* FORM DARK MODE */
@@ -241,6 +255,9 @@ img {
   padding: 2rem 1.5rem;
   box-shadow: var(--box-shadow-primary);
   border-radius: var(--border-radius-primary);
+
+  /* Hidden by default - but included in html */
+  visibility: hidden;
 }
 
 .results__profile-pic {
@@ -325,7 +342,7 @@ img {
   color: var(--clr-lm-dark-300);
 }
 
-.results__contact-info:hover {
+a.results__contact-info:hover {
   text-decoration: underline;
 }
 
@@ -334,7 +351,7 @@ img {
   color: var(--clr-lm-dark-300-transp);
 }
 
-.results__contact-info--na:hover {
+a.results__contact-info--na:hover {
   text-decoration: none;
   cursor: auto;
 }

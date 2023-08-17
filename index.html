@@ -14,7 +14,7 @@
         <button
           type="button"
           class="header__toggle-btn header__toggle-btn--dark"
-          aria-label="change to dark mode"
+          aria-label="change mode"
         >
           <!-- aria-label for a more accessible name -->
           dark
@@ -80,12 +80,15 @@
         <input
           type="text"
           class="form__input"
+          name="query"
           placeholder="Search GitHub username"
           aria-label="Enter github username"
         />
+        <!-- <p class="form__warning">No results</p> -->
         <!-- aria-label because I use no <label> -->
         <button class="form__submit-btn">Search</button>
       </form>
+      <!-- <p class="form__error-message">Error. You must blablabla. Try again.</p> -->
       <article class="results">
         <img
           class="results__profile-pic"
@@ -105,15 +108,19 @@
           <div class="results__stats-container">
             <div class="results__stat">
               <h3 class="results__stat-heading">Repos</h3>
-              <p class="results__stat-value">8</p>
+              <p class="results__stat-value results__stat-value--repos">8</p>
             </div>
             <div class="results__stat">
               <h3 class="results__stat-heading">Followers</h3>
-              <p class="results__stat-value">3938</p>
+              <p class="results__stat-value results__stat-value--followers">
+                3938
+              </p>
             </div>
             <div class="results__stat">
               <h3 class="results__stat-heading">Following</h3>
-              <p class="results__stat-value">9</p>
+              <p class="results__stat-value results__stat-value--following">
+                9
+              </p>
             </div>
           </div>
           <div class="results__contact-container">
@@ -133,7 +140,9 @@
                   fill="#4b6a9b"
                 />
               </svg>
-              <a href="" class="results__contact-info">San Francisco</a>
+              <p class="results__contact-info" id="location-name">
+                San Francisco
+              </p>
             </div>
             <div class="results__contact">
               <!-- Icon with semantic meaning -->
@@ -157,7 +166,13 @@
                   />
                 </g>
               </svg>
-              <a href="" class="results__contact-info">https://github.blog</a>
+              <a
+                href=""
+                class="results__contact-info"
+                id="blog-link"
+                target="_blank"
+                >https://github.blog</a
+              >
             </div>
             <div class="results__contact">
               <!-- Icon with semantic meaning -->
@@ -175,7 +190,11 @@
                   fill="#4b6a9b"
                 />
               </svg>
-              <a href="" class="results__contact-info results__contact-info--na"
+              <a
+                href=""
+                class="results__contact-info"
+                id="twitter-link"
+                target="_blank"
                 >Not Available</a
               >
             </div>
@@ -195,7 +214,7 @@
                   fill="#4b6a9b"
                 />
               </svg>
-              <a href="" class="results__contact-info">@github</a>
+              <p class="results__contact-info" id="company-name">@github</p>
             </div>
           </div>
         </div>
